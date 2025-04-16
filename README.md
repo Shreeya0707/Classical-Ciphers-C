@@ -35,12 +35,19 @@ All algorithm implementations are provided in separate `.c` files for modularity
 Caesar.c --> Caesar Cipher logic Vigenere.c --> Vigenère Cipher logic Hill.c --> Hill Cipher logic ... main.c --> Menu-driven program to access all ciphers
 
 
-## ▶️ How to Compile and Run
+▶️ How to Compile and Run
+Use the terminal or command prompt to compile all .c files along with main.c into a single executable:
 
-Use the terminal or command prompt and compile all `.c` files together with `main.c`.
-
+🛠️ Compilation Command:
 gcc main.c Caesar.c Atbash.c August.c Affine.c Vigenere.c Gronsfeld.c Beaufort.c Autoclave.c Ngram.c Hill.c RailFence.c Route.c Myszkowski.c -o crypto
+
+▶️ Run the Executable:
 ./crypto
+
+💡 Make sure all .c files are in the same folder before running this command.
+If any filenames are different (like vigenere_cipher.c instead of Vigenere.c), adjust accordingly in the compile command.
+
+
 
 
 
