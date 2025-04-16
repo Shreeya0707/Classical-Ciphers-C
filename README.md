@@ -23,20 +23,25 @@ This project contains implementations of various classical encryption algorithms
 - Language: **C Programming**
 - Compiler: GCC / any C compiler
 
-## 📁 Folder Structure
+## 📁 Project Structure
 
-All files are implemented individually and can be compiled and run separately. Each file corresponds to the name of the algorithm.
+All algorithm implementations are provided in separate `.c` files for modularity and clarity.
+
+> ❗ **Note:**  
+> Although each algorithm has its own `.c` file, the project is designed to be run using the `main.c` file.  
+> `main.c` acts as the driver program that provides access to all encryption methods.
+
+### Example structure:
+Caesar.c --> Caesar Cipher logic Vigenere.c --> Vigenère Cipher logic Hill.c --> Hill Cipher logic ... main.c --> Menu-driven program to access all ciphers
+
 
 ## ▶️ How to Compile and Run
 
-Use the terminal or command prompt and type:
+Use the terminal or command prompt and compile all `.c` files together with `main.c`.
 
 ```bash
-gcc algorithm_name.c -o output
-./output
-
-gcc Caesar.c -o caesar
-./caesar
+gcc main.c Caesar.c Atbash.c August.c Affine.c Vigenere.c Gronsfeld.c Beaufort.c Autoclave.c Ngram.c Hill.c RailFence.c Route.c Myszkowski.c -o crypto
+./crypto
 
 🙋‍♀️ Author
 V Shreeya
@@ -45,6 +50,9 @@ Roll No: 2201102098
 
 IoT-B, SNU Chennai
 
-
 📚 Note
 These are classical ciphers and are not secure by modern standards. Use them only for learning and experimentation.
+
+
+
+
