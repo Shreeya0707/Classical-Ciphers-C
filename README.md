@@ -39,7 +39,6 @@ Caesar.c --> Caesar Cipher logic Vigenere.c --> Vigenère Cipher logic Hill.c --
 
 Use the terminal or command prompt and compile all `.c` files together with `main.c`.
 
-```bash
 gcc main.c Caesar.c Atbash.c August.c Affine.c Vigenere.c Gronsfeld.c Beaufort.c Autoclave.c Ngram.c Hill.c RailFence.c Route.c Myszkowski.c -o crypto
 ./crypto
 
